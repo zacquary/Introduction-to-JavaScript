@@ -1,14 +1,22 @@
 /************************************************************** Task 1: Warm-up! **************************************************************/
 //Task a: declare a variable called votingAge, console log true if age > 18 (no function required)
 
-var votingAge(num) => {
-if (num > 18)
+function votingAge(num){
+if (num > 18){
     console.log(true);
 }
+    }
 
 
 
 //Task b: declare a variable and then use a conditional to change the value of that variable based on the value assigned to a second variable (no function required)
+
+var a = 10
+var b = 2*a 
+
+if (a >= 10){
+    b = 5 
+}
 
 for (let i=0; i<100; i++);
 
@@ -18,7 +26,7 @@ for (let i=0; i<100; i++);
 var x = "1999";
 var y = parseInt(x);
 
-
+console.log(Number("1999"))
 
 
 
@@ -56,28 +64,29 @@ console.log(age*7);
 // 7(.583) - 12(1.0) months 4% of their body weight
 
 // when you are finished invoke your function with the weight of 15 lbs and the age of 1 year - if your calculations are correct your result should be 0.44999999999999996
-function dogFeeder(weight, age)
-if (age > 1 && weight <= 5){
-    console.log(weight * .05)}
-else if (age > 1 &&  weight <10 || weight > 5){
-    console.log(weight * .04)
-} 
-else if (age > 1 &&  weight < 15 || weight > 10){
-    console.log(weight * .03)
-}
-else if (age > 1 && weight > 15){
-    console.log(weight * .02)
-}
-else if (age > .16 && age < .32){
-    console.log(weight * .10)
-}
-else if (age > .32 && age < .583){
+function dogFeeder(weight, age){
+    if (age > 1 && weight <= 5){
     console.log(weight * .05)
 }
-else if (age > .583 && age < 1.0){
+    else if (age > 1 &&  weight <10){
+    console.log(weight * .04)
+} 
+    else if (age > 1 &&  weight < 15 ){
+    console.log(weight * .03)
+}
+    else if (age > 1 && weight > 15){
+    console.log(weight * .02)
+}
+    else if (age > .16 && age < .32){
+    console.log(weight * .10)
+}
+    else if (age > .32 && age < .583){
+    console.log(weight * .05)
+}
+    else if (age > .583 && age < 1.0){
     console.log(weight * .04)
 }
-
+}
 
 
 
